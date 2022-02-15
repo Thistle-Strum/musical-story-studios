@@ -24,7 +24,7 @@ html {
 }
 body {
     font-family: 'Roboto Serif', sans-serif;
-    font-size: 1rem;
+    font-size: clamp(0.5rem, 2vw, 3rem);
     background-color: rgb(103, 204, 240);
 }
 
@@ -36,14 +36,16 @@ ul {
 }
 
 a {
-    font-size: 1rem;
+    font-size: clamp(0.5rem, 2vw, 3rem);
     color: purple;
     text-decoration: none;
     text-align: center;
+   
 }
 
-a:hover {
+li a:hover {
     color: salmon;
+  
 }
 
 /* ************************* */
@@ -53,50 +55,30 @@ header {
 }
 
 .navContainer {
-    width: 100%;
-}
-
-.navContainer li {
-    width: 20%;
-    margin: 30px 0;
-}
-
-.leftSideAnchors {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: left;
-    position: relative;
-    left: 40px;
-}
-.logoContainer{
-   display: flex;
-   justify-content: center;
-}
-
-.rightSideAnchors {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: left;
-    position: relative;
-    right: 82px;
-}
-
-.logo {
-    width: 13%;
-    position: absolute;
-    z-index: 10;
-    
-}
-
-.navContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5% 0 13% 0;
 }
 
-.groupPic img{
+.headerImgs {
+    position: relative;
+}
+
+.logoContainer{
+    position: absolute;
+    top: -16%;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    width: 17%;
+    z-index: 10;
+}
+
+.headerImgs img{
     position: relative;
     max-width: 100%;
     object-fit: contain;
