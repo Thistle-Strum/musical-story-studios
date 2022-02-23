@@ -18,12 +18,13 @@ header {
 .logoContainer{
     position: absolute;
     top: -16%;
-    left: 0;
-    right: 0;
+    left: 45%;
+    right: 45%;
+    width: 15%
 }
 
 .logo {
-    width: 17%;
+    width: 100%;
     z-index: 10;
 }
 

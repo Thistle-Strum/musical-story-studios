@@ -293,12 +293,13 @@ header {
 .logoContainer {
   position: absolute;
   top: -16%;
-  left: 0;
-  right: 0;
+  left: 45%;
+  right: 45%;
+  width: 15%;
 }
 
 .logo {
-  width: 17%;
+  width: 100%;
   z-index: 10;
 }
 
@@ -319,28 +320,28 @@ header {
 
 /* collapsed nav bar */
 @media (max-width: 700px) {
-  .headerNavContainer {
+  .headerImgs {
+    margin-top: 25%;
+  }
+
+  .navContainer {
     position: fixed;
-    opacity: 1;
-    width: 25vw;
-    height: 15vh;
     top: -500px;
     right: -500px;
     transition: all 5s ease-in-out;
+    margin: 0;
   }
 
   nav .menuToggle {
     display: flex;
     flex-direction: column;
-    margin-left: 95%;
-    color: white;
-    font-size: 36px;
+    margin-left: 90%;
     padding-top: 20px;
   }
 
   .menuButton:hover,
 .menuButton:focus {
-    border: red solid 2px;
+    border: salmon solid 2px;
   }
 
   .menuButton {
@@ -354,17 +355,16 @@ header {
     transition: all 0.5s ease-in-out;
     background-color: white;
     border-radius: 50%;
-    z-index: 10;
+    z-index: 30;
   }
 
   .menuButtonBurger {
     width: 25px;
     height: 3px;
-    background: blue;
+    background: black;
     border-radius: 5px;
     transition: all 500ms ease-in-out;
   }
-
   .menuButtonBurger::before {
     content: "";
     position: absolute;
@@ -374,8 +374,8 @@ header {
     border-radius: 5px;
     transition: all 500ms ease-in-out;
     margin-top: 8px;
+    transform: translateY(-16px);
   }
-
   .menuButtonBurger::after {
     content: "";
     position: absolute;
@@ -385,13 +385,6 @@ header {
     border-radius: 5px;
     transition: all 500ms ease-in-out;
     margin-top: -8px;
-  }
-
-  .menuButtonBurger::before {
-    transform: translateY(-16px);
-  }
-
-  .menuButtonBurger::after {
     transform: translateY(16px);
   }
 
@@ -410,21 +403,46 @@ header {
     margin: 0;
   }
 
-  .menu-checkbox:checked + .headerNavContainer {
+  .menu-checkbox:checked + .navContainer {
     position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-left: red solid 5px;
-    background-color: green;
-    width: 50vw;
+    border-left: salmon solid 7px;
+    background-color: #67ccf0;
+    width: 60vw;
     height: 225px;
-    padding: 75px 0px 0px 165px;
+    padding: 75px 0px 0px 24%;
     transition: all 600ms ease-in-out;
     text-align: right;
-    z-index: 5;
+    z-index: 20;
     top: 0px;
     right: 0px;
     border-bottom-left-radius: 100%;
+  }
+  .menu-checkbox:checked + .navContainer li:nth-child(1) {
+    position: relative;
+    right: 57%;
+    top: -28%;
+  }
+  .menu-checkbox:checked + .navContainer li:nth-child(2) {
+    position: relative;
+    right: 45%;
+    top: -28%;
+  }
+  .menu-checkbox:checked + .navContainer li:nth-child(3) {
+    position: relative;
+    right: 33%;
+    top: -28%;
+  }
+  .menu-checkbox:checked + .navContainer li:nth-child(4) {
+    position: relative;
+    right: 16%;
+    top: -28%;
+  }
+  .menu-checkbox:checked + .navContainer li:nth-child(5) {
+    position: relative;
+    right: 0%;
+    top: -28%;
   }
 }
