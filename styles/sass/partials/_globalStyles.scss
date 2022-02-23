@@ -1,0 +1,44 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+html {
+    font-size: 125%;
+}
+body {
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: clamp(0.5rem, 2vw, 3rem);
+    background-color: rgb(103, 204, 240);
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-size: clamp(0.5rem, 2vw, 3rem);
+    color: purple;
+    text-decoration: none;
+    text-align: center;
+   
+}
+
+li a:hover {
+    color: salmon;
+  
+}
+
+.menu-checkbox {
+    display: none;
+}
+

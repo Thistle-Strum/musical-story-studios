@@ -10,13 +10,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Musical Story Studios</title>
 </head>
 <body>
     <div class="wrapper">
         <header id="home">
-            <nav>
+            <nav class="nav">
+                <label for="menu" class="menuToggle" aria-hidden="true">
+                    <div class="menuButton">
+                        <div class="menuButtonBurger"></div> 
+                    </div>
+                    <!-- <i class="fas fa-bars"></i> -->
+                </label>
+                <input type="checkbox" id="menu" class="menu-checkbox">
+                
                 <ul class="navContainer">
                     <li><a href="https://www.youtube.com/channel/UCihZIP4E7Hy5EMZW6zQqfhQ">Past Creations</a></li>
                     <li><a href="https://www.facebook.com/musicalstorystudio">Our Members</a></li>
@@ -28,9 +36,9 @@
             </nav>        
                 <div class="headerImgs">
                     <a class="logoContainer" href="#home">
-                        <img class="logo" src="musical-story-studios-logo.png" alt="">
+                        <img class="logo" src="./assets/musical-story-studios-logo.png" alt="Musical Story Studios logo">
                     </a>
-                    <img src="musical-story-studios.png" alt="Cassie Norton, Sarah Abusarar, Chris Taeyoung Kim">                 
+                    <img src="./assets/musical-story-studios.png" alt="Cassie Norton, Sarah Abusarar, Chris Taeyoung Kim">                 
                 </div>
         </header>
         <main>

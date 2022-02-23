@@ -1,0 +1,118 @@
+
+
+
+/* collapsed nav bar */
+@media (max-width: 700px) {
+
+    .headerNavContainer {
+        position: fixed;
+        opacity: 1;
+        width: 25vw;
+        height: 15vh;
+        top: -500px;
+        right: -500px;
+        transition: all 5s ease-in-out;
+    }
+    
+    
+    nav .menuToggle {
+            display: flex;
+            flex-direction: column;      
+            margin-left: 95%;
+            color: white;     
+            font-size: 36px;
+            padding-top: 20px;
+      }
+    
+    .menuButton:hover,
+    .menuButton:focus {
+        border: red solid 2px;
+        
+    }
+    
+        .menuButton {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 41px;
+            height: 41px;
+            cursor: pointer;
+            transition: all .5s ease-in-out;
+            background-color: white;
+            border-radius: 50%;
+            z-index: 10;
+        }
+                
+        .menuButtonBurger {
+            width: 25px;
+            height: 3px;
+            background: blue;
+            border-radius: 5px;
+            transition: all 500ms ease-in-out;
+        }
+                
+        .menuButtonBurger::before {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 3px;
+            background: black;
+            border-radius: 5px;
+            transition: all 500ms ease-in-out;
+            margin-top: 8px;
+        }
+    
+        .menuButtonBurger::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 3px;
+            background: black;
+            border-radius: 5px;
+            transition: all 500ms ease-in-out;
+            margin-top: -8px;
+        }
+                
+                    .menuButtonBurger::before {
+                        transform: translateY(-16px);
+                    }
+                
+                    .menuButtonBurger::after {
+                        transform: translateY(16px);
+                    }
+                
+                    .menuButton.open .menuButtonBurger {
+                        transform: translateX(-50px);
+                        background: transparent;
+                    }
+                
+                    .menuButton.open .menuButtonBurger::before {
+                        transform: rotate(45deg) translate(35px, -35px);
+                        margin: 0;
+                    }
+                
+                    .menuButton.open .menuButtonBurger::after {
+                        transform: rotate(-45deg) translate(35px, 35px);
+                        margin: 0;
+                    }
+    
+        .menu-checkbox:checked + .headerNavContainer {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-left:red solid 5px;
+            background-color: green;
+            width: 50vw;
+            height: 225px;
+            padding: 75px 0px 0px 165px;
+            transition: all 600ms ease-in-out;
+            text-align: right;
+            z-index: 5;
+            top:0px;
+            right:0px;
+            border-bottom-left-radius: 100%;
+        }
+    }
+    
