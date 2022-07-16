@@ -4,6 +4,11 @@
 /* collapsed nav bar */
 @media (max-width: 700px) {
 
+    body,
+    html {
+        font-size: 1rem;
+    }
+
     .headerImgs {
         margin-top: 25%;
     }
@@ -14,13 +19,6 @@
         transition: all 5s ease-in-out;
         margin: 0;
     }
-
-    // .logoContainer {
-    //     top: -48%;
-    //     .logo {
-    //         width: 25%
-    //     }
-    // }
 
     nav .menuToggle {
         display: flex;
@@ -112,7 +110,7 @@
             border-bottom-left-radius: 100%;
             li:nth-child(1) {
                 position: relative;
-                right: 57%;
+                right: 67%;
                 top: -28%;
             }
             li:nth-child(2) {
@@ -122,12 +120,12 @@
             }
             li:nth-child(3) {
                 position: relative;
-                right: 33%;
+                right: 10%;
                 top: -28%;
             }
             li:nth-child(4) {
                 position: relative;
-                right: 16%;
+                right: 5%;
                 top: -28%;
             }
             li:nth-child(5) {
@@ -136,99 +134,11 @@
                 top: -28%;
             }
         }
+        .areej-logo,
+        .tac-logo {
+            padding: 10px;
+        }
+
     }
 
 
-// @media (max-width: 550px) {
-//     .menu-checkbox:checked + .navContainer {
-
-//         li:nth-child(1) {
-//             position: relative;
-//             right: 85%;
-//             top: -28%;
-//         }
-//         li:nth-child(2) {
-//             position: relative;
-//             right: 70%;
-//             top: -28%;
-//         }
-//         li:nth-child(3) {
-//             position: relative;
-//             right: 55%;
-//             top: -28%;
-//         }
-//         li:nth-child(4) {
-//             position: relative;
-//             right: 40%;
-//             top: -28%;
-//         }
-//         li:nth-child(5) {
-//             position: relative;
-//             right:25%;
-//             top: -28%;
-//         }
-//     }
-// }
-
-
-// @media (max-width: 450px) {
-//     .menu-checkbox:checked + .navContainer {
-
-//         li:nth-child(1) {
-//             position: relative;
-//             right: 140%;
-//             top: -28%;
-//         }
-//         li:nth-child(2) {
-//             position: relative;
-//             right: 120%;
-//             top: -28%;
-//         }
-//         li:nth-child(3) {
-//             position: relative;
-//             right: 90%;
-//             top: -28%;
-//         }
-//         li:nth-child(4) {
-//             position: relative;
-//             right: 70%;
-//             top: -28%;
-//         }
-//         li:nth-child(5) {
-//             position: relative;
-//             right:50%;
-//             top: -28%;
-//         }
-//     }
-// }
-
-// @media (max-width: 450px) {
-//     .menu-checkbox:checked + .navContainer {
-
-//         li:nth-child(1) {
-//             position: relative;
-//             right: 130%;
-//             top: -28%;
-//         }
-//         li:nth-child(2) {
-//             position: relative;
-//             right: 110%;
-//             top: -28%;
-//         }
-//         li:nth-child(3) {
-//             position: relative;
-//             right: 90%;
-//             top: -28%;
-//         }
-//         li:nth-child(4) {
-//             position: relative;
-//             right: 70%;
-//             top: -28%;
-//         }
-//         li:nth-child(5) {
-//             position: relative;
-//             right:50%;
-//             top: -28%;
-//         }
-//     }
-// }

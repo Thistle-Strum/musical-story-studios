@@ -236,19 +236,20 @@ html {
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1780px;
   width: 90%;
   margin: 0 auto;
 }
 
-html {
+html,
+body {
   font-size: 125%;
 }
 
 body {
   font-family: "Roboto Serif", sans-serif;
-  font-size: clamp(0.5rem, 2vw, 3rem);
-  background-color: #67ccf0;
+  font-size: clamp(1rem, 2vw, 3rem);
+  background-color: rgb(103, 204, 240);
 }
 
 ul {
@@ -269,13 +270,27 @@ li a:hover {
   color: salmon;
 }
 
+h2 {
+  color: purple;
+  padding: 55px 0;
+}
+
+h3 {
+  padding: 20px;
+}
+
+p {
+  padding: 20px;
+  line-height: 1.85rem;
+}
+
 .menu-checkbox {
   display: none;
 }
 
-header {
-  height: 100vh;
-  width: 90vw;
+img {
+  display: block;
+  width: 100%;
 }
 
 .navContainer {
@@ -303,13 +318,6 @@ header {
   z-index: 10;
 }
 
-.headerImgs img {
-  position: relative;
-  max-width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .navContainer {
   display: flex;
   flex-direction: row;
@@ -318,12 +326,63 @@ header {
   margin: 5% 0 13% 0;
 }
 
+.registrationLabel {
+  text-align: center;
+}
+
+.registrationButton {
+  font-size: 1rem;
+  display: block;
+  color: #113362;
+  background-color: #FB4950;
+  width: 50%;
+  padding: 5px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.registrationButton:hover {
+  color: #FB4950;
+  background-color: #113362;
+}
+
+.event1 {
+  color: #113362;
+  background-color: #FB4950;
+  text-align: center;
+}
+
+.eventContainer {
+  background-color: white;
+}
+
+.covidInfoButton {
+  font-size: 1rem;
+}
+.covidInfoButton:hover {
+  color: #FB4950;
+}
+
+.sponsorLogos {
+  display: flex;
+  flex-direction: row;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.areej-logo,
+.tac-logo {
+  padding: 50px;
+}
+
 /* collapsed nav bar */
 @media (max-width: 700px) {
+  body,
+html {
+    font-size: 1rem;
+  }
   .headerImgs {
     margin-top: 25%;
   }
-
   .navContainer {
     position: fixed;
     top: -500px;
@@ -331,19 +390,16 @@ header {
     transition: all 5s ease-in-out;
     margin: 0;
   }
-
   nav .menuToggle {
     display: flex;
     flex-direction: column;
     margin-left: 90%;
     padding-top: 20px;
   }
-
   .menuButton:hover,
 .menuButton:focus {
     border: salmon solid 2px;
   }
-
   .menuButton {
     position: fixed;
     display: flex;
@@ -357,7 +413,6 @@ header {
     border-radius: 50%;
     z-index: 30;
   }
-
   .menuButtonBurger {
     width: 25px;
     height: 3px;
@@ -387,29 +442,25 @@ header {
     margin-top: -8px;
     transform: translateY(16px);
   }
-
   .menuButton.open .menuButtonBurger {
     transform: translateX(-50px);
     background: transparent;
   }
-
   .menuButton.open .menuButtonBurger::before {
     transform: rotate(45deg) translate(35px, -35px);
     margin: 0;
   }
-
   .menuButton.open .menuButtonBurger::after {
     transform: rotate(-45deg) translate(35px, 35px);
     margin: 0;
   }
-
   .menu-checkbox:checked + .navContainer {
     position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-left: salmon solid 7px;
-    background-color: #67ccf0;
+    background-color: rgb(103, 204, 240);
     width: 60vw;
     height: 225px;
     padding: 75px 0px 0px 24%;
@@ -422,7 +473,7 @@ header {
   }
   .menu-checkbox:checked + .navContainer li:nth-child(1) {
     position: relative;
-    right: 57%;
+    right: 67%;
     top: -28%;
   }
   .menu-checkbox:checked + .navContainer li:nth-child(2) {
@@ -432,17 +483,21 @@ header {
   }
   .menu-checkbox:checked + .navContainer li:nth-child(3) {
     position: relative;
-    right: 33%;
+    right: 10%;
     top: -28%;
   }
   .menu-checkbox:checked + .navContainer li:nth-child(4) {
     position: relative;
-    right: 16%;
+    right: 5%;
     top: -28%;
   }
   .menu-checkbox:checked + .navContainer li:nth-child(5) {
     position: relative;
     right: 0%;
     top: -28%;
+  }
+  .areej-logo,
+.tac-logo {
+    padding: 10px;
   }
 }
