@@ -365,6 +365,7 @@ img {
 .sponsorLogos {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   -o-object-fit: cover;
      object-fit: cover;
 }
